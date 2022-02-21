@@ -1,0 +1,359 @@
+@charset "utf-8";
+html {font-family: 'Montserrat','Noto sans kr','Noto serif kr','맑은 고딕','돋움',sans-serif; font-size:16px; margin:0; padding:0;}
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{margin: 0;}
+body::-webkit-scrollbar { width:12px }
+body::-webkit-scrollbar-track { background-color: #fff; }
+body::-webkit-scrollbar-thumb { background-color: rgb(58, 11, 80); border-radius: 10px; }
+ul {list-style: none; margin: 0; padding: 0;}
+a {color: inherit; text-decoration: none;}
+img {vertical-align: top;}
+main h2:after {
+    content: "";
+    display: block;
+    width: 35px;
+    border-bottom: solid #000 1px;
+    margin: 0 auto;
+    padding: 14px 0;
+  }
+
+.container { text-align: center;}
+
+/* pC버전에서 안보이는부분 */
+.mobile {display: none;}
+
+/* 헤더 */
+.container header {display: flex; font-weight: 500; font-size: 13.5px;
+    width: 100%;
+}
+.container header h1 {margin: 0 auto;}
+.container header #gnb {display: flex; margin: 30px 30px 30px 80px;}
+.container header #gnb li:first-child {margin-right: 10px;}
+.container header #gnb li:nth-child(2) { color: rgb(190, 190, 190);}
+.container header #gnb li:nth-child(3) {margin: 0 10px; }
+.container header #register {display: flex; margin: 30px 80px 30px 30px; justify-content: space-between;}
+.container header #register li {margin-right: 20px; text-transform: uppercase;}
+.container header #register li:last-child {margin: 0;}
+.container header ul li a:hover { color: rgb(201, 2, 228);}
+
+/* 메인이미지/메뉴 */
+
+.container nav {
+    /* background: url(common/asset/images/mainimage.png) no-repeat 100% 0 /cover;
+    background-position: center;
+    max-width: 100%; height: auto;
+    display: block;
+    background-size: cover;
+    width: 100%; 
+    height: 100vh; */
+    text-transform: uppercase; font-weight: 700; font-size: 1rem; letter-spacing:1px;
+    height: 0;
+}
+.container nav .menu {
+    display: flex; justify-content: center;
+    z-index: 1000;
+    position: relative;
+    top: 0px;
+}
+.container nav .menu li { padding: 25px;  text-align: center;}
+.container nav .menu li:last-child{display: none;}
+.container nav .menu li a:hover { color: rgb(255, 255, 255);}
+
+/* main  */
+.container main {
+    width: 100vh;
+    display: inline; 
+}
+main .box2 {
+    margin: 100px;
+}
+main .box2 h3 {
+    text-transform: uppercase; font-size: 14px; font-weight: 600;
+}
+main .box2 h4 {
+    font-family: 'Noto serif kr',sans-serif; font-size: 45px; margin: 40px 0 0 0; font-weight: 500; letter-spacing: -2px;
+}
+main .box2 h1 {
+    text-transform: uppercase; font-size: 45px; letter-spacing: -3px; font-weight: 600; margin: 0;
+}
+main .box2 div {
+    margin-top: 85px; font-size: 17px; color: #888; font-weight: 300;
+}
+main .box2 div p {margin: 0;}
+
+
+main .box3 {
+    display: flex;
+    justify-content: center;
+    width: 91%;
+    margin: 0 auto;
+}
+main .box3 img {
+    max-width: 100%; height: auto;}
+main .box3 .img>h3 { font-family: 'Noto serif kr'; font-weight: 500; font-size: 20px; margin: 23px 0 8px 0;}
+main .box3 .img>p {font-family: 'Noto sans kr'; font-weight: 400; font-size: 14px; color: #888888; line-height: 1.5rem; margin: 0; padding: 3%;}
+
+/* technology behing grid */
+main article {
+    margin: 53px auto 176px auto;
+    display: grid;
+    grid-template-rows: 315px 452px 246px;
+    grid-template-columns: 571fr 770fr 357fr;
+    /* grid-template: minmax(25%, auto) minmax(25%, auto) minmax(25%, auto) / minmax(25%, auto) minmax(25%, auto) minmax(25%, auto); */
+    width: 90%; 
+}
+main h2 {font-weight: 400; font-size: 24px; letter-spacing: 2px; margin-top: 100px;}
+main article div {background: transparent; font-family:'Montserrat','Noto sans kr'; letter-spacing: -1px;}
+
+/* 탐색하기 */
+main article #tb1 {background: url(common/asset/images/img4.png) no-repeat right / cover;}
+main article #tb1 h3 {font-size: 2rem; font-weight: 600; text-align: left; margin: 190px 45px 0 ; }
+main article div#tb1 p {font-size: 24px; text-align: left; margin: 0 45px; font-weight: 300; font-family: 'Noto sans kr';}
+
+/* 정보 */
+main article #tb2 {
+    background: url(common/asset/images/img5.png) no-repeat right / cover;
+    color: #fff;
+}
+main article #tb2 h3 {font-size: 2rem; text-align: left; margin: 190px 80px 0 ; font-weight: 600;}
+main article #tb2 p {font-size: 1.4rem; text-align: left; margin: 0 80px; font-weight: 300;font-family: 'Noto sans kr';}
+
+/* 온라인스토어 */
+main article #tb3 {background: url(common/asset/images/img6.png) no-repeat right / cover;}
+main article #tb3 h3 {font-size: 2rem; text-align: right; margin-top: 170px; margin-right: 50%; font-weight: 600; line-height: 2.1rem;}
+
+/* 원격교육 */
+main article #tb4 {background: url(common/asset/images/img7.png) no-repeat right / cover; color: #fff;}
+main article #tb4 h3 {font-size: 2rem; text-align: left; margin: 320px 45px 0 ; font-weight: 600;}
+main article #tb4 p {font-size: 1.4rem; text-align: left; margin: 0 45px; font-weight: 300; font-family: 'Noto sans kr';}
+
+/* 잉크스페이스 */
+main article #tb5 {background: url(common/asset/images/img8.png) no-repeat 50% / cover; color: #fff;}
+main article #tb5 h3 {font-size: 2rem; text-align: left; margin: 320px 80px 0 ; font-weight: 600;}
+main article #tb5 p {font-size: 1.4rem; text-align: left; margin: 0 80px; font-weight: 300;font-family: 'Noto sans kr';}
+
+/* 페이퍼리스 */
+main article #tb6 {background: url(common/asset/images/img9.png) no-repeat right / cover; font-family: 'Noto sans kr';}
+main article #tb6 h3 {font-size: 1.7rem; text-align: left; margin: 285px 30px 0 ; font-weight: 600; line-height: 2.3rem;}
+main article #tb6 p {font-size: 1.4rem; text-align: left; margin: 5px 30px; font-weight: 300; line-height: 1.9rem; }
+
+/* 기술솔루션 */
+main article #tb7 {background: url(common/asset/images/img10.png) no-repeat right / cover;}
+main article #tb7 h3 {font-size: 36px; text-align: left; margin: 120px 45px 0 ; font-weight: 600;}
+main article #tb7 p {font-size: 1.4rem; text-align: left; margin: 5px 45px; font-weight: 300;font-family: 'Noto sans kr'; line-height: 1.9rem;}
+
+/* 디지털잉크 */
+main article #tb8 {background: url(common/asset/images/img11.png) no-repeat left / cover;}
+main article #tb8 h3 {font-size: 36px; text-align: right; margin: 115px 45px 0 ; font-weight: 700;}
+main article #tb8 p {font-size: 1.4rem; text-align: right; margin: 5px 45px; font-weight: 300;font-family: 'Noto sans kr'; line-height: 1.9rem;}
+
+/* 고객지원팀 */
+main article #tb9 {background: url(common/asset/images/img12.png) no-repeat right / cover; color: #fff;}
+main article #tb9 h3 {font-size: 1.8rem; text-align: left; margin: 120px 30px 0 ; font-weight: 600; line-height: 2.3rem;}
+main article #tb9 p {font-size: 1.4rem; text-align: left; margin: 5px 30px; font-weight: 300; line-height: 1.9rem; }
+
+main .ldc h2:after {
+    content: "";
+    display: block;
+    width: 35px;
+    border-bottom: solid #000 1px;
+  }
+  main .ldc h2 {
+    background-color: #f5f5f5;
+    margin: 0; padding: 418px 0 29px 0;
+}
+main .box4 {
+    background: url(common/asset/images/img13.png) center no-repeat;
+    max-width: 100%; height: 421px;
+}
+main .box4 .imgbanner {
+    background: url(common/asset/images/img14.png) right ;
+    margin: 50px auto;
+    position: relative;
+    top: 270px;
+    width: 70%; height: 100%;
+    z-index: 10;
+}
+main .box4 .txt {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 120px;
+    width: 55%;
+}
+main .box4 .txt p {
+    font-family: 'Cafe24 Ohsquare';
+    font-size: 4rem;
+    margin: 0 auto; padding: 0;
+    letter-spacing: -2px;
+    color: #2d202c;
+}
+main .box4 .txt p:nth-child(1) {
+    font-size: 2.5rem;
+    background-color: #2d202c; color: #ffbe1c;
+    padding: 10px 5px;
+}
+main .box4 .txt a{
+    font-size: 1.2rem;
+    font-family: 'Noto sans kr';
+    color: #2d202c;
+    border: 2px #2d202c solid;
+    position: relative;
+    top: 5px;
+    letter-spacing: -1px;
+    padding: 5px 7px 5px 10px;
+}
+main .box4 .txt a:hover { background-color: #2d202c; color: #fff; transition: 1s;}
+
+main .box5 {
+    background-color: #f5f5f5;
+    display: flex; justify-content: center;
+}
+main .box5 .img { width: 17%; background-color: #fff;
+    padding: 50px 0;
+    border:#f5f5f5 1px solid;
+    overflow: hidden;
+}
+main .box5 .img p {width: 90%; margin: 0 auto; padding: 0; font-size: 13px; color: #989898;}
+main .box5 img {max-width: 100%; height: auto;}
+
+main .more {
+    height: 200px;
+    background-color: #f5f5f5;
+}
+main #more {
+    font-size: 17px;
+    padding: 10px 10px 10px 16px;
+    border: solid 1px #989898; background-color: #fff;
+    position: relative;
+    top:75px;
+    font-weight: 500;
+}
+main #more:hover {
+    transition: 1s;
+    background-color: #000; color: #fff; border: solid 1px #000; 
+}
+
+/* best items */
+main .bi {margin: 90px 0 30px 0;}
+main .bi h2 {margin: 25px;}
+main .bi p {margin: 26px; color: #aaa; font-size: 14px;}
+/* ////////////////////////////// */
+main .box6 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+main .box6 .img {
+    width: 33.3333%;
+    overflow: hidden;
+}
+main .box6 img {
+    max-width: 100%; height: auto;
+}
+main .box6 h4 {
+    font-size: 15px; font-weight: 400;
+    border-radius: 25px;
+    width: 230px;
+    margin: 0 auto; padding: 5px;
+    background-color: #f4f4f4;
+}
+main .box6 h3 {
+    font-size: 17px;
+    font-family: 'Noto sans kr';
+}
+main .box6 h3:after {
+    content: "";
+    display: block;
+    width: 500px;
+    border-bottom: solid #f4f4f4 1px;
+    margin: 25px auto 0 auto;
+}
+main .box6 .img p {
+    padding: 0; margin: 17px;
+    font-size: 14px;
+    font-family: 'Noto sans kr';
+    color: #aaa;
+}
+main .box6 .img div { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .box6 .img div p {
+    margin: 13px 5px 5px 5px;
+    font-size: 17px;
+    font-family: 'Montserrat','Noto sans kr';
+    font-weight: bold;
+    color: #000;
+}
+main .box6 .img19 p { margin-top: 40px;}
+main .box6 .img20 div p:first-child{ color: #aaa; text-decoration: line-through;}
+main .box6 .img21 p { margin-top: 34px;}
+main .box6 .img21 div p:first-child{ color: #aaa; text-decoration: line-through;}
+main .box6 .img div p:nth-child(3){
+    font-size: 12px;
+    font-family: 'Montserrat','Noto sans kr';
+    font-weight: 500;
+    color: #ff0000;
+}
+
+main .media h2 {margin: 170px 0 51px 0;}
+main .box7 img { width: 100%;}
+
+
+/* footer  */
+footer {
+    width: 90%; 
+    margin: 20px auto;
+}
+footer section {display: inline-block;}
+footer .box8 { display: flex;
+    margin: 50px auto;
+    text-align: left;
+    justify-content: space-around; }
+
+footer .box8 div:nth-child(3){
+    padding-right: 120px;
+}
+
+footer .box9 ul {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+footer .box9 ul li {
+    transition: color 1s;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    font-size: 3rem;
+    font-weight: 600;
+    
+}
+footer .box9 ul li:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* swiper */
+.swiper { 
+    width: 100%; height: calc(100vh - 100px);
+    --swiper-navigation-color: rgb(255, 255, 255);
+    --swiper-pagination-color: rgb(201, 2, 228);
+    z-index: 1;
+  }
+  .swiper-slide { background:no-repeat 50% / cover; /* text-indent:-9999px;*/ font-weight: bold; font-size:3rem; display: flex; justify-content: center; align-items: center; color:#fff }
+  .swiper-slide.bg1 { background-image: url(images/bg4.png);}
+  .swiper-slide.bg2 { background-image: url(images/bg2.jpg);}
+  .swiper-slide.bg3 { background-image: url(images/bg3.jpg);}
+  .swiper-slide.bg4 { background-image: url(images/bg1.jpg);}
+
+  .swiper .swiper-pagination-bullet { width:20px; height:20px; }
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom:30px;
+  }
