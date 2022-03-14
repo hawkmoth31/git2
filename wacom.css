@@ -328,7 +328,7 @@ footer .box9 ul {
     padding: 5px;
 }
 footer .box9 ul li {
-    transition: color 1s;
+   
     margin: 10px 10px;
     padding: 5px 10px;
     font-size: 3rem;
@@ -338,6 +338,7 @@ footer .box9 ul li {
 footer .box9 ul li a:hover {
     background-color: #000;
     color: #fff;
+     transition: color 1s;
 }
 
 /* swiper */
