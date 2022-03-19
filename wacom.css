@@ -304,7 +304,7 @@ main .box6 .img div p:nth-child(3){
 }
 
 main .media h2 {margin: 170px 0 51px 0;}
-main .box7 img { width: 100%;}
+main .box7 iframe { width: 100%; height: 56vw;}
 
 
 /* footer  */
