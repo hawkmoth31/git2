@@ -62,7 +62,7 @@ main h2:after {
 }
 .container nav .menu li { padding: 25px;  text-align: center;}
 .container nav .menu li:last-child{display: none;}
-.container nav .menu li a:hover { color: rgb(255, 255, 255);}
+.container nav .menu li a:hover { color: rgb(201, 2, 228);}
 
 /* main  */
 .container main {
@@ -344,7 +344,7 @@ footer .box9 ul li a:hover {
 /* swiper */
 .swiper { 
     width: 100%; height: calc(100vh - 100px);
-    --swiper-navigation-color: rgb(255, 255, 255);
+    --swiper-navigation-color: rgb(0, 0, 0);
     --swiper-pagination-color: rgb(201, 2, 228);
     z-index: 1;
   }
